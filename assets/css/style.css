@@ -665,7 +665,74 @@ h6 {
     opacity: 0;
   }
 }
-
+.group-contact{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.group-contact.active {
+  visibility: visible;
+  opacity: 1;
+}
+.group-contact p{
+  background:rgb(222, 224, 222);
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  padding: 10px 70px;
+  border-radius: 7%;
+  -webkit-border-radius: 7%;
+  text-decoration: none;
+  transition: all 0.4s;
+  position: fixed;
+  left: 15px;
+  bottom:150px;
+  color: #101522;
+  z-index: 1;
+  margin: 0 auto;
+}
+.group-contact p span {
+  padding-left: 5px;
+}
+.contact-one{
+  background:#25D366;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.4s;
+  position: fixed;
+  left: 15px;
+  bottom: 80px;
+  z-index: 1;
+}
+.contact-two{
+  background:#25D366;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.4s;
+  position: fixed;
+  left: 15px;
+  bottom:15px;
+  z-index: 1;
+}
+.contact-one i,.contact-two i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.contact-one:hover,.contact-two:hover{
+  background: #128C7E
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/

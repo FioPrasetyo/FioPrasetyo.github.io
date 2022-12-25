@@ -77,7 +77,18 @@
       behavior: 'smooth'
     })
   }
-
+  let groupContact = select('.group-contact')
+  if (groupContact) {
+    const toggleGroupContact = () => {
+      if (window.scrollY > 100) {
+        groupContact.classList.add('active')
+      } else {
+        groupContact.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleGroupContact)
+    onscroll(document, toggleGroupContact)
+  }
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
